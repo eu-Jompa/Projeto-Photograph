@@ -221,7 +221,7 @@ main .about-me .about-me-conteudo p{
 /* contact */
 .contact{
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
     background-color: var(--color-black);
     display: flex;
     align-items: center;
@@ -253,6 +253,7 @@ main .about-me .about-me-conteudo p{
     
     font-size: 25px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .contact .contact-us i:hover{
@@ -331,6 +332,10 @@ footer a {
     color: var(--color-white);
     
 }
+footer a:hover{
+    color: var(--color-brown);
+    transition: 0.5s;
+}
 @media screen and
 (min-width: 200px) and
 (max-width: 720px){
@@ -376,6 +381,7 @@ footer a {
         width: 90%;
         margin-top: 50px;
         justify-content: center;
+        
     }
 
     main .hero .icons .linha{
@@ -389,6 +395,7 @@ footer a {
     main .hero .icons i{
 
         margin: 5px 10px;
+        
 
     }
     /* portifolio */
