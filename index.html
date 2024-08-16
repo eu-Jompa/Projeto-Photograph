@@ -11,21 +11,28 @@
     <!-- icons -->
     <script src="https://kit.fontawesome.com/240d6e3d0f.js" crossorigin="anonymous"></script>
     <!-- icons -->
+    <link rel="shortcut icon" href="src/img/logo/Logo-Pamela icon.webp" type="image/x-icon">
     <link rel="stylesheet" href="src/css/style.css">
     <title>Pâmela Nascimento</title>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="menu-mobile">
+            <i class="fa-solid fa-bars hamburguer"  ></i>
+        </div>
+        
+        <nav class="navbar ">
             <div class="logo">
                 <a href="#"><h1>P</h1></a>
+                <span class="close">X</span>
             </div>
             <ul class="">
-                <li>PORTFOLIO</li>
-                <li>ABOUT ME</li>
-                <li>CONTACT US</li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#aboutme">ABOUT ME</a></li>
+                <li><a href="#contact">CONTACT US</a> </li>
             </ul>
         </nav>
+    
     </header>
     <main>
         <div class="hero">
@@ -45,7 +52,7 @@
                 <div class="imagem"> <img src="src/img/2149152635 (1).webp" alt="Pâmela Nascimento"></div>
             </div>
         </div>
-        <div class="portfolio">
+        <div id="portfolio" class="portfolio">
             <h2> PORTFOLLIO</h2>
             <div class="galeria .imagem-galeria1">
                 <img class="imagem-galeria" src="src/img/galeria/2151609238.jpg" alt="">
@@ -58,7 +65,7 @@
             </div>
 
         </div>
-        <div class="about-me">
+        <div id="aboutme" class="about-me">
             <div class="about-me-imagem">
                 <img src="src/img/about-me.jpg" alt="">
             </div>
@@ -69,7 +76,7 @@
         </div>
     </main>
     
-        <div class="contact">
+        <div id="contact" class="contact">
             <div class="form">
                 <h4 class="">Contato</h4>
                 <form action="">
@@ -99,6 +106,6 @@
             <span>©2024 by Pamela Nascimento | Design do site criado por <a href="#">Jompa</a></span>
             
         </footer>
-    
+    <script src="src/js/script.js"></script>
 </body>
 </html>

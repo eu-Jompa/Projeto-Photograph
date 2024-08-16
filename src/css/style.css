@@ -15,9 +15,12 @@ html, body{
     height: auto;
     font-family: var(--fonte-principal);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 
 }
-
+header .menu-mobile{
+    display: none;
+}
 header nav{
     display: flex;
     width: 100vw;
@@ -35,10 +38,11 @@ header nav .logo{
 }
 header nav .logo a {
     text-decoration: none;   
-    color: var(--color-brown) ;
+    color: var(--color-white);
     border: none;
-    
-    
+}
+header nav .logo a:hover{
+    color: var(--color-brown);
 }
 
 header nav .logo a h1{
@@ -59,13 +63,19 @@ header nav ul li{
     list-style-type: none;
     text-decoration: none;
     margin: 0px 10px;
-    color: var(--color-white);
+    
     font-size: 14px;
+    scroll-behavior: smooth;
 }
-header nav ul li:hover{
+header nav ul li a:hover{
     color: var(--color-brown);
     transition: 0.5s;
     font-weight: 800;
+}
+header nav ul li a{
+    color: var(--color-white);
+    text-decoration: none;
+
 }
 
 /* hero */
@@ -158,6 +168,7 @@ main .portfolio .galeria{
     column-count:3;
     column-gap: 10px;
     
+    
 }
 main .portfolio .galeria .imagem-galeria{
     max-width: 100%;
@@ -185,11 +196,13 @@ main .portfolio .galeria .imagem-galeria{
 
 main .about-me{
     width: 100vw;
-    height: 80vh;
+    height: auto;
     background-color: var(--color-black);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px ;
 }
 main .about-me .about-me-imagem{
     max-width: 50%;
@@ -221,13 +234,15 @@ main .about-me .about-me-conteudo p{
 /* contact */
 .contact{
     width: 100vw;
-    height: 30vh;
+    height: auto;
     background-color: var(--color-black);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--color-white);
     font-family: var(--fonte-principal);
+    box-sizing: border-box;
+    padding-top: 50px;
 }
 .contact .contact-us{
     width: 300px;
@@ -238,7 +253,7 @@ main .about-me .about-me-conteudo p{
     justify-content: center;
     align-items: baseline;
     font-size: 16px;
-    
+
     
 }
 .contact .contact-us h5{
@@ -339,18 +354,72 @@ footer a:hover{
 @media screen and
 (min-width: 200px) and
 (max-width: 720px){
-
-    header nav{
+    header .menu-mobile{
+        width: 100vw;
+        height: 10vh;
+        background-color: var(--color-black);
         display: flex;
+        flex-direction: column;
+        padding-left:20px;
+        align-items: baseline;
+        justify-content: center;
+        position: fixed;
+    }
+    header .navbar .logo .close {
+        padding: 10px;
         
+    }
+    header .hambuguer{
+        height: 20vh;
+    }
+    header i{
+        color: var(--color-white);
+        font-size: 20px;
+
+    }
+
+    header .navbar{
+        position: fixed;
+        width: 0vw;
+        height: 100%;
+        background-color: var(--color-black);
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: .5s;
+        
+    }
+    .navbar.abrir-nav{
+        width: 30vh;
+    }
+    header nav .logo{
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        padding-top: 20px;
+        justify-content: space-around;
+        height: 100px;
+
+    }
+    header nav .logo a{
+        margin-right: 50px;
+    }
+    header nav span{
+        color: var(--color-white);
+        font-size: 15px;
+        font-family: var(--fonte-principal);
     }
     header nav ul{
         
         flex-direction: column;
         width: 100%;
-        
         justify-content: center;
     }
+    header nav ul li{
+        margin-bottom: 7px;
+    }
+
+    /* hero */
     main{ 
         display: block;
     }
