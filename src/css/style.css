@@ -138,7 +138,7 @@ main .hero .conteudo h1 span{
 }
 main .hero .conteudo p{
     line-height: 26px;
-    max-width: 82%;
+    max-width: 80%;
 }
 
 
@@ -434,16 +434,18 @@ footer a:hover{
         display: flex;
         flex-direction: column;
         max-width: 100%;
+        
         align-items: center;
-        justify-content: center;
+        justify-content: left;
 
 
     }
     main .hero .conteudo h1{
-        font-size: 35px;
+        font-size: 34px;
     }
     main .hero .conteudo p{
-        max-width: 80%;
+        text-align: left;
+        max-width: 85%;
     }
     main .hero .icons{
         flex-direction: row;
