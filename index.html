@@ -80,11 +80,11 @@
             <div class="form">
                 <h4 class="">Contato</h4>
                 <form action="">
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Assunto">
-                    <textarea class="message" placeholder="Mensagem"></textarea>
-                    <a href="" type="submit">Submit</a>
+                    <input type="text" id="fullName" placeholder="Nome">
+                    <input type="email" id="email_id" placeholder="Email">
+                    <input type="text" id="subject" placeholder="Assunto">
+                    <textarea class="message" id="message" placeholder="Mensagem"></textarea>
+                    <a onclick="sendEmail()"  type="submit">Enviar</a>
                 </form>
                 
                 </div>
@@ -95,9 +95,9 @@
                         <h5>Redes Sociais</h5>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
-                    <h5>whatsapp</h5>
-                    <p>(85) 99999-9999</p>
+                    
                     
                 
             </div>
@@ -106,6 +106,16 @@
             <span>©2024 by Pamela Nascimento | Design do site criado por <a href="#">Jompa</a></span>
             
         </footer>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+            emailjs.init({
+            publicKey: "eeKqA4kLWjq2iI3Es",
+            });
+            })();
+        </script>    
     <script src="src/js/script.js"></script>
 </body>
 </html>
